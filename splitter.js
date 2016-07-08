@@ -6,7 +6,7 @@ $c=function(name,attribs,el){
 			el.setAttribute(prop,attribs[prop])
 	return el
 }
-/*
+
 slider=$$('.slider')[0]
 panel=$$('.quickview-panel')[0]
 overlay=$$('.quickview-panel .overlay')[0]
@@ -37,7 +37,9 @@ onmousemove=function(e,dX,nPW,minW,maxW) {
 	}
 }
 
-*/
+
+
+/*
 function Splitter(pos,dock,container,i,c,pc){
 	if(!(this instanceof Splitter))
 		return new Splitter(pos,dock,container)
@@ -114,4 +116,4 @@ Splitter.prototype.bottom=Splitter.prototype.right={
 		return result
 	}
 }
-
+*/
