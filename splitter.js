@@ -3,6 +3,7 @@
 // querySelectorAll
 const $$ = (sel, con) => [].slice.call((con||document).querySelectorAll(sel))
 
+
 // createElement
 const $c = (name, attribs) => {
     let m;
@@ -38,17 +39,15 @@ class Splitter {
 
         this.adjustPanels();
 		// register events:
-        window.addEventListener("resize", (e) => this.adjustPanels())
+        window.addEventListener("resize", (e) => this.setSizes())
+
+
+
     }
-    
-    
-    get left() { return this.panels[0] }
-    get right() { return this.panles[1] }
     
     setSizes() {
-        // TODO
+        
     }
-       
 }
 
 // const splitter = new Splitter($$(".panel")[0], $$(".panel")[1]);
